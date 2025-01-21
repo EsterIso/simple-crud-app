@@ -1,0 +1,204 @@
+/* Navigation */
+.nav {
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s;
+    top: 0;
+    background: #2563eb;
+  }
+  
+  .nav.scrolled {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+  }
+  
+  .logo-link {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #f9f385;
+    border-radius: 9999px;
+  }
+  
+  .logo-text {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .logo-text.scrolled {
+    color: #1f2937;
+  }
+  
+  .logo-text.not-scrolled {
+    color: white;
+  }
+  
+  /* Desktop Menu */
+  .desktop-menu {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-menu {
+      display: flex;
+    }
+  }
+  
+  .nav-link {
+    transition: color 0.2s;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .nav-link.scrolled {
+    color: #4b5563;
+  }
+  
+  .nav-link.scrolled:hover {
+    color: #1f2937;
+  }
+  
+  .nav-link.not-scrolled {
+    color: white;
+  }
+  
+  .nav-link.not-scrolled:hover {
+    color: #e5e7eb;
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-clerk-container{
+      display: flex;
+      
+  }
+  
+  .clerk-container{
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-menu-button {
+      display: none;
+    }
+    .mobile-clerk-container{
+      display: none;
+    }
+    .clerk-container{
+      display: flex;
+    }
+  }
+  
+  .menu-button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .clerk-container{
+    align-items: center;
+  }
+  
+  .menu-button.scrolled {
+    color: #4b5563;
+  }
+  
+  .menu-button.scrolled:hover {
+    background-color: #a0a4aa;
+  }
+  
+  .menu-button.not-scrolled {
+    color: white;
+  }
+  
+  .menu-button.not-scrolled:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-menu-links {
+    padding: 0.5rem;
+  }
+  
+  .mobile-menu-item {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+  }
+  
+  .mobile-menu-item:hover {
+    color: #1f2937;
+    background-color: #f9fafb;
+  }
+  
+  /* Clerk Section */
+  .sign-in-btn{
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .sign-in-btn.scrolled {
+    color: #4b5563;
+  }
+  
+  .sign-in-btn.scrolled:hover {
+    color: #1f2937;
+  }
+  
+  .sign-in-btn.not-scrolled {
+    color: white;
+  }
+  
+  .sign-in-btn.not-scrolled:hover {
+    color: #e5e7eb;
+  }
+  
+  .user-btn{
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
